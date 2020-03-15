@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Traders Have Money</name>
+	<author>Neceros</author>
+	<supportedVersions>
+    <li>1.1</li> 
+  </supportedVersions>
+  <packageId>neceros.tradershavemoney</packageId>
+	<description></description>	
+</ModMetaData>

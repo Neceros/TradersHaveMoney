@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>Orbital_Horder</defName>
+    <label>horder trader</label>
+    <orbital>true</orbital>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>5000~10000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>
+          <min>2500</min>
+          <max>15000</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>Root</categoryDef>
+        <thingDefCountRange>
+          <min>0</min>
+          <max>0</max>
+        </thingDefCountRange>
+        <totalPriceRange>
+          <min>0</min>
+          <max>0</max>
+        </totalPriceRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>Techprints</categoryDef>
+        <thingDefCountRange>
+          <min>0</min>
+          <max>0</max>
+        </thingDefCountRange>
+        <totalPriceRange>
+          <min>0</min>
+          <max>0</max>
+        </totalPriceRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>
