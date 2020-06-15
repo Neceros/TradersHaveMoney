@@ -8,7 +8,7 @@
     <stockGenerators>
       <li Class="StockGenerator_SingleDef">
         <thingDef>Silver</thingDef>
-        <countRange>5000~10000</countRange>
+        <countRange>10000~100000</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>Gold</thingDef>
