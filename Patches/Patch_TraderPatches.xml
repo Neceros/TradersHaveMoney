@@ -22,12 +22,135 @@
 
 			<!-- Orbital -->
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/TraderKindDef[defName="Orbital_BulkGoods" or defName="Orbital_CombatSupplier" or defName="Orbital_Exotic" or defName="Orbital_PirateMerchant"]//thingDef[text()="Silver"]/../countRange</xpath>
+				<xpath>/Defs/TraderKindDef[defName="Orbital_BulkGoods" or defName="Orbital_CombatSupplier" or defName="Orbital_Exotic" or defName="Orbital_PirateMerchant" ]//thingDef[text()="Silver"]/../countRange</xpath>
 				<value>
 					<countRange>10000~100000</countRange>
 				</value>
 			</li>
 		</operations>
 	</Operation>
+
+
+  <!-- PatchOperationSequence was purposefully not used, so the success is hidden if there's any errors -->
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/TraderKindDef[defName="TextilesTrader"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/TraderKindDef[defName="TextilesTrader"]//thingDef[text()="Silver"]/../countRange</xpath>
+      <value>
+        <countRange>10000~100000</countRange>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/TraderKindDef[defName="ProsthesesTrader"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/TraderKindDef[defName="ProsthesesTrader"]//thingDef[text()="Silver"]/../countRange</xpath>
+      <value>
+        <countRange>10000~100000</countRange>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/TraderKindDef[defName="BlackMarket"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/TraderKindDef[defName="BlackMarket"]//thingDef[text()="Silver"]/../countRange</xpath>
+      <value>
+        <countRange>10000~100000</countRange>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/TraderKindDef[defName="Ind_Orbital_DeepSpaceMiningShip"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/TraderKindDef[defName="Ind_Orbital_DeepSpaceMiningShip"]//thingDef[text()="Silver"]/../countRange</xpath>
+      <value>
+        <countRange>10000~100000</countRange>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/TraderKindDef[defName="Orbital_IndustrialAutomaton"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/TraderKindDef[defName="Orbital_IndustrialAutomaton"]//thingDef[text()="Silver"]/../countRange</xpath>
+      <value>
+        <countRange>10000~100000</countRange>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/TraderKindDef[defName="JSDOrbital__PhaseII_Armor"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/TraderKindDef[defName="JSDOrbital__PhaseII_Armor"]//thingDef[text()="Silver"]/../countRange</xpath>
+      <value>
+        <countRange>10000~100000</countRange>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/TraderKindDef[defName="AIRobotsTrader"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/TraderKindDef[defName="AIRobotsTrader"]//thingDef[text()="Silver"]/../countRange</xpath>
+      <value>
+        <countRange>10000~100000</countRange>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/TraderKindDef[defName="Orbital_FarmingSW"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/TraderKindDef[defName="Orbital_FarmingSW"]//thingDef[text()="Silver"]/../countRange</xpath>
+      <value>
+        <countRange>10000~100000</countRange>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/TraderKindDef[defName="Orbital_GlitterWorldSW"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/TraderKindDef[defName="Orbital_GlitterWorldSW"]//thingDef[text()="Silver"]/../countRange</xpath>
+      <value>
+        <countRange>10000~100000</countRange>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/TraderKindDef[defName="Orbital_MiningGoodsSW"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/TraderKindDef[defName="Orbital_MiningGoodsSW"]//thingDef[text()="Silver"]/../countRange</xpath>
+      <value>
+        <countRange>10000~100000</countRange>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/TraderKindDef[defName="GR_Mad_Science_Caravan"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/TraderKindDef[defName="GR_Mad_Science_Caravan"]//thingDef[text()="Silver"]/../countRange</xpath>
+      <value>
+        <countRange>10000~100000</countRange>
+      </value>
+    </match>
+  </Operation>
 
 </Patch>	

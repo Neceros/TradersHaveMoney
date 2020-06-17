@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+  <!-- ========== Thank you okradonkey ========== -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Let's Trade!</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <!-- Tribal -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/TraderKindDef[
+            defName="Caravan_Neolithic_Farming" or
+            defName="Caravan_Neolithic_Mining" or
+            defName="Caravan_Neolithic_Textiles" or
+            defName="Caravan_Neolithic_Medical" or
+            defName="Caravan_Neolithic_Art" or
+            defName="Caravan_Neolithic_Odd"
+            ]//thingDef[text()="Silver"]/../countRange</xpath>
+          <value>
+            <countRange>800~4000</countRange>
+          </value>
+        </li>
+
+        <!-- Industrial -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/TraderKindDef[
+            defName="Caravan_Outlander_Farming" or
+            defName="Caravan_Outlander_Mining" or
+            defName="Caravan_Outlander_Textiles" or
+            defName="Caravan_Outlander_Medical" or
+            defName="Caravan_Outlander_Drugs" or
+            defName="Caravan_Outlander_Archeological"
+            ]//thingDef[text()="Silver"]/../countRange</xpath>
+          <value>
+            <countRange>4000~10000</countRange>
+          </value>
+        </li>
+
+        <!-- Orbital -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/TraderKindDef[
+            defName="Orbital_Archelogical" or
+            defName="Orbital_Butcher" or
+            defName="Orbital_Cannibal" or
+            defName="Orbital_Drug" or
+            defName="Orbital_Factory" or
+            defName="Orbital_Farming" or
+            defName="Orbital_Livestock" or
+            defName="Orbital_Medical" or
+            defName="Orbital_Mining" or
+            defName="Orbital_Rare" or
+            defName="Orbital_Restaurant" or
+            defName="Orbital_Scrap" or
+            defName="Orbital_Textiles"
+            ]//thingDef[text()="Silver"]/../countRange</xpath>
+          <value>
+            <countRange>10000~100000</countRange>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>	
